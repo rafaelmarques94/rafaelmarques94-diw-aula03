@@ -1,0 +1,70 @@
+<!doctype>
+<html>
+<head>
+<title>Formulários</title>
+<meta charset = 'utf-8'
+</head>
+<body>
+<h1>Formulário de cadastro</h1>
+<form action = 'servidor.php' method = 'POST'>
+<p>
+Nome completo: <input type = 'text' name = 'nome' placeholder = 'Informe seu nome completo' size = '30' required = 'true'>
+</p>
+<p>
+E-mail: <input type = 'email' name = 'email' placeholder = 'Informe um e-mail válido' size = '30' >
+</p>
+<p>
+Sexo: <input type = 'radio' name = 'sexo' id = 'masculino' value = 'Masculino'>
+      <label for = 'masculino'>Masculino</label>
+      <input type = 'radio' name = 'sexo' id = 'feminino' value = 'Feminino'>
+      <label for = 'feminino'>Feminino</label>      
+</p>
+<p>
+Data de Nascimento: <input type = 'text' name = 'datanascimento' placeholder = 'dd/mm/aaaa'>
+</p>
+<p>
+Grau de escolaridade: <select name = 'escolaridade' size = '1'>
+                        <option value = 'medio'>Ensino Médio</option>
+                        <option value = 'superior' selected = 'true'>Superior Completo</option>
+                        <option value = 'pos'>Pós-Graduação</option>
+                        <option value = 'mestrado'>Mestrado</option>
+                        <option value = 'doutorado'>Doutorado</option>
+                     
+                      </select>
+</p>
+
+
+<p>
+Estilos Musicais preferidos: <select name = 'escolaridade' size = '5' multiple = 'true'>
+                        <option value = 'rock'>Rock</option>
+                        <option value = 'funk'>Funk</option>
+                        <option value = 'samba'>Samba</option>
+                        <option value = 'pagode'>Pagode</option>
+                        <option value = 'pop'>Pop</option>
+                        </select>
+</p>
+<p>
+Nome de usuário: <input type = 'text' name = 'usuario' size = '30'>
+</p>
+<p>
+Senha: <input type = 'password' name = 'senha' size = '30'>
+</p>
+<p>
+Cor preferida: <input type = 'color' name = 'cor'>
+</p>
+<p>
+Número de filhos: <input type = 'number' name = 'numfilhos'>
+</p>
+<P>
+Quantidade de carros: 0<input type="range" min="0" max="5" step="1" value="0" name = 'carros'>5
+</P>
+<p>
+Comentários sobre o site: <textarea cols = '30' rows = '10' name = 'comentario'>Excelente site!</textarea>
+</p>
+<p>
+<input type = 'checkbox' name = 'ofertas'>Desejo receber ofertas via e-mail.
+</p>
+<p>
+<input type = 'submit' value = 'Enviar'> <input = type = 'submit' value = 'limpar Campos'></input>
+</p>
+</body>
